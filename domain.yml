@@ -11,7 +11,7 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi! I am Mantrin. How can I help you?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -27,7 +27,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am Mantrin- A chatbot made for student queries."
 
 session_config:
   session_expiration_time: 60
