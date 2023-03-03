@@ -23,7 +23,7 @@ function Basic(){
 
     const handleSubmit=(evt)=>{
         evt.preventDefault();
-        const name = "shreyas";
+        const name = "Sneh";
         const request_temp = {sender : "user", sender_id : name , msg : inputMessage};
         
         if(inputMessage !== ""){
