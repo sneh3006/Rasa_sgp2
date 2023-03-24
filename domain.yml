@@ -11,11 +11,12 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi! I am Mantrin. How can I help you?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/rf1Zzs4wbCk" } }
+
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -27,8 +28,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  - text: "I am Mantrin- A chatbot made for student queries."
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
