@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The-Club-Project-
 This repo Contains Project Files of 21CE042 21CE031 21CE028
 -> in login.hbs put href to /auth/google
@@ -14,3 +15,6 @@ This repo Contains Project Files of 21CE042 21CE031 21CE028
 
 
 
+=======
+# Rasa_sgp2
+>>>>>>> 48b75d6011a58c34c9738b24b931eb39811cfe6c
