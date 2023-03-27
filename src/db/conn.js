@@ -1,13 +1,14 @@
 const mongoose = require("mongoose");
+require('dotenv').config({path: './.env'})
 
-mongoose.connect("mongodb+srv://sneh:Sneh1234@cluster0.vtybwdu.mongodb.net/?retryWrites=true&w=majority" , {
+mongoose.connect(process.env.MONGO_URI , {
     useNewUrlParser: true,
-    // useUnifiredTopology: true,
-    // useCreateIndex: true
+    useUnifiedTopology: true,
 }).then(()=> { 
-    console.log('connection successful');
+    console.log('MongoDB connected');
 }).catch((ERR) => {
-    console.log('Not connected');
+    console.log('DB Connection Error');
+    console.log(ERR);
 })
 
 const contactSchema = {

@@ -1,11 +1,12 @@
+require('dotenv').config('./.env');
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
 const path = require('path');
 const hbs = require('hbs');
 const passport = require("passport");
 const session = require("express-session");
 const login = false;
+const PORT = process.env.PORT || 3000;
 
 require('./auth');                //OAuth conn
 require("./db/conn");             //database conn
@@ -27,6 +28,7 @@ app.use(session({
     resave: true,
     saveUninitialized: false  
 }));
+
 app.use(passport.initialize());
 app.use(passport.session()); 
 
@@ -106,8 +108,8 @@ app.get("/clubpage-4", (req, res)=> {
 });
 
 app.get("/*", (req, res)=> {
-    res.render('404error');
+    res.send('Error: 404');
 });
 
-app.listen(port, ()=> {
-    console.log("server is running")});
+app.listen(PORT, ()=> {
+    console.log(`Server is running at port no ${PORT}`)});
