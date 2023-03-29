@@ -1,4 +1,4 @@
-import cx_Oracle as cx
+import  mysql.connector as sql 
 import sqlalchemy
 import pandas as pd
 
