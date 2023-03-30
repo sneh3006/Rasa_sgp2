@@ -91,4 +91,10 @@ nlu:
     - am I talking to a human?
     - who are you?
     - what are you?
-
+- intent: know_attendence
+  examples: |
+    - What is my attendence?
+    - how much is my attendence?
+    - how many classes did I attend?
+    - 
+    - 

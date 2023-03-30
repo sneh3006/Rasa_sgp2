@@ -3,6 +3,9 @@ version: "3.1"
 intents:
   - greet
   - goodbye
+  - know_attendence
+  - know_marks
+  - know_me 
   - affirm
   - deny
   - mood_great
