@@ -74,6 +74,8 @@ responses:
   run_sad_songs :
   - text : "here is a playlist of sad songs"
     attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/UJoZjKx0SgU"} }
+
+    
   utter_did_that_help:
   - text: "Did that help you?"
 
