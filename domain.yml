@@ -101,7 +101,7 @@ responses:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, Here is a make to laugh"
+  - text: "Great, Here is a dad joke for you:"
     image: "https://i.imgur.com/tdLzaUo.png"
     
   utter_goodbye:
