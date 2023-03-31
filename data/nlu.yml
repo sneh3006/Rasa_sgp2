@@ -112,6 +112,58 @@ nlu:
     - play sad songs please
     - play sad songs now
     - play sad songs now please
+
+- intent: know_syllabus
+  examples: |
+    - What is my syllabus?
+    - how much is my syllabus?
+    - syllabus please!
+    - help me get my syllabus 
+    - tell me my syllabus
+    - show me my syllabus
+    - give me my syllabus
+    - syllabus
+    - lecture syllabus
+    - I want to know my syllabus
+
+- intent: python_syllabus
+  examples: |
+    - What is my python syllabus?
+    - how much is my python syllabus?
+    - python syllabus please!
+    - help me get my python syllabus 
+    - tell me my python syllabus
+    - show me my python syllabus
+    - give me my python syllabus
+    - python syllabus
+    - lecture python syllabus
+    - I want to know my python syllabus
+
+- intent: dbms_syllabus 
+  examples: |
+    - What is my dbms syllabus?
+    - how much is my dbms syllabus?
+    - dbms syllabus please!
+    - help me get my dbms syllabus 
+    - tell me my dbms syllabus
+    - show me my dbms syllabus
+    - give me my dbms syllabus
+    - dbms syllabus
+    - lecture dbms syllabus
+    - I want to know my dbms syllabus
+
+- intent: data_structure_syllabus
+  examples: |
+    - What is my data structure syllabus?
+    - how much is my data structure syllabus?
+    - data structure syllabus please!
+    - help me get my data structure syllabus 
+    - tell me my data structure syllabus
+    - show me my data structure syllabus
+    - give me my data structure syllabus
+    - data structure syllabus
+    - lecture data structure syllabus
+    - I want to know my data structure syllabus
     
 # - intent: know_attendence
 #   examples: |

@@ -51,7 +51,10 @@ stories:
   - action: utter_greet
   - action: utter_how_are_you
   - intent: motivation
-  - action: run_motivation
+  - action: utter_motivation
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
   - action: utter_goodbye
 
 - story: comedy path
@@ -60,7 +63,10 @@ stories:
   - action: utter_greet
   - action: utter_how_are_you
   - intent: comedy
-  - action: run_comedy
+  - action: utter_comedy
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
   - action: utter_goodbye
 
 - story: sad songs path
@@ -69,7 +75,22 @@ stories:
   - action: utter_greet
   - action: utter_how_are_you
   - intent: sad_songs
-  - action: run_sad_songs
+  - action: utter_sad_songs
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: syllabus path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: know_syllabus
+  - action: utter_syllabus
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
   - action: utter_goodbye
 
 # - story: know my attendence

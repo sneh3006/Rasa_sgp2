@@ -14,6 +14,10 @@ intents:
   - motivation
   - comedy
   - sad_songs
+  - know_syllabus
+  - python_syllabus
+  - dbms_syllabus
+  - data_structure_syllabus
 
 # entities:
 #   - student_id
@@ -53,25 +57,42 @@ responses:
   utter_greet:
   - text: "Hi! I am Mantrin."
 
-  utter_cheer_up:
-  - text: "Here are options to cheer you up:"
+  utter_syllabus:
+  - text: "Choose subject for syllabus :"
     buttons:
-    - title: "Motivation"
-      payload: "/motivation"
-    - title: "Comedy"
-      payload: "/comedy"
-    - title: "Sad songs"
-      payload: "/sad_songs"
+    - title : "Python"
+      payload : /python_syllabus
+    - title : "Database Management System"
+      action : /dbms_syllabus
+    - title : "Data Structure"
+      action : /data_structure_syllabus
+    
+  utter_python_syllabus:
+  - text: "Python syllabus :"
+    image: "https://lh3.googleusercontent.com/tOfijrvlM341IG6MOOJtGFoVQsUk5rPkaROIBvlKL0kBMJMBbM0mpHMJO9EzruxtM6vFB8VrDrhtpc28XV74DxT-Dqn-zfyXbAXIseQFjMKmxbYaOKMbTz1DMRtEVqOD6w=w1280"
 
-  run_motivation :
+  utter_dbms_syllabus:
+  - text: "DBMS syllabus :"
+    image: "https://lh5.googleusercontent.com/pJ0UnW7ApU5V3gbY_QdjIpiE4CObtQP62cmJi6OHiutHxsx_m0rZ2Y-rBzb4AhHz39GDIJMiLXZdUB6ynqA-OD2Kd6977moRVm189oJXDZB442LTUPT_ZxkXMUFTSi73KQ=w1280"
+  
+  utter_data_structure_syllabus:
+  - text: "Data Structure syllabus :"
+    image: "https://lh6.googleusercontent.com/tmQmlC4nQeawk_XgyebOV2zuvNH5CiW7ZQc03xQqSDxemk0aTpHcMXVk6Q0RBiYT9G2tsWWVdy3OcLqGx9M-zTsy_N9-TLGjQq3KGW6aHTqXMvGHNyNgKWlaoUi3p-IxiQ=w1280"
+
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/rf1Zzs4wbCk" } }
+
+  utter_motivation :
   - text : "here is something to motivate you"
     attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/rf1Zzs4wbCk" } }
 
-  run_comedy :
+  utter_comedy :
   - text : "here is something to make you laugh"
     attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/DvUadTYVzAs"} }
 
-  run_sad_songs :
+  utter_sad_songs :
   - text : "here is a playlist of sad songs"
     attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/UJoZjKx0SgU"} }
 

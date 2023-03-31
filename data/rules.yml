@@ -11,3 +11,18 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: utter python syllabus everytime user asks for it
+  steps:
+  - intent: python_syllabus
+  - action: utter_python_syllabus
+
+- rule: utter dbms syllabus everytime user asks for it
+  steps:
+  - intent: dbms_syllabus
+  - action: utter_dbms_syllabus
+
+- rule: utter data structure syllabus everytime user asks for it
+  steps:
+  - intent: data_structure_syllabus
+  - action: utter_data_structure_syllabus
