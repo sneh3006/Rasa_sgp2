@@ -91,10 +91,57 @@ nlu:
     - am I talking to a human?
     - who are you?
     - what are you?
-- intent: know_attendence
+
+- intent: motivation
   examples: |
-    - What is my attendence?
-    - how much is my attendence?
-    - how many classes did I attend?
-    - 
-    - 
+    - motivate me
+    - motivate me please
+    - motivate me now
+    - motivate me now please
+
+- intent: comedy
+  examples: |
+    - make me laugh
+    - make me laugh please
+    - make me laugh now
+    - make me laugh now please
+
+- intent: sad_songs
+  examples: |
+    - play sad songs
+    - play sad songs please
+    - play sad songs now
+    - play sad songs now please
+    
+# - intent: know_attendence
+#   examples: |
+#     - What is my attendence?
+#     - how much is my attendence?
+#     - attendence please!
+#     - help me get my attendence 
+#     - tell me my attendence
+#     - show me my attendence
+#     - give me my attendence
+#     - attendece
+#     - lecture attendence 
+# - intent: know_marks
+#   examples: |
+#     - What is my marks?
+#     - how much is my marks?
+#     - marks please!
+#     - help me get my marks 
+#     - tell me my marks
+#     - show me my marks
+#     - give me my marks
+#     - marks
+#     - lecture marks
+
+# - intent: know_id
+#   examples: |
+#     - My id is [124](student_id)
+#     - My id is [1](student_id)
+#     - My id is [2](student_id)
+#     - My id is [3](student_id)
+#     - My id number is [4](student_id)
+#     - id number [2](student_id)
+#     - id number [3](student_id)

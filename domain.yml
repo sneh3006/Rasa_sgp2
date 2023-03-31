@@ -3,35 +3,99 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - know_attendence
-  - know_marks
-  - know_me 
+  # - know_attendence
+  # - know_marks
+  # - know_id
   - affirm
   - deny
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - motivation
+  - comedy
+  - sad_songs
+
+# entities:
+#   - student_id
+#   - marks
+#   - attendence
+#   - student_name
+#   - student_batch
+#   - studnet_semester
+#   - student_mail
+
+
+# slots:
+#   student_id:
+#     type: number
+#     influence_conversation: true
+#   marks:
+#     type: number
+#     influence_conversation: true
+#   attendence:
+#     type: number
+#     influence_conversation: true
+#   student_name:
+#     type: text
+#     influence_conversation: true
+#   student_batch:
+#     type: text
+#     influence_conversation: true
+#   studnet_semester:
+#     type: text
+#     influence_conversation: true
+#   student_mail:
+#     type: email
+#     influence_conversation: true
+
 
 responses:
   utter_greet:
-  - text: "Hi! I am Mantrin. How can I help you?"
+  - text: "Hi! I am Mantrin."
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Here are options to cheer you up:"
+    buttons:
+    - title: "Motivation"
+      payload: "/motivation"
+    - title: "Comedy"
+      payload: "/comedy"
+    - title: "Sad songs"
+      payload: "/sad_songs"
+
+  run_motivation :
+  - text : "here is something to motivate you"
     attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/rf1Zzs4wbCk" } }
 
+  run_comedy :
+  - text : "here is something to make you laugh"
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/DvUadTYVzAs"} }
 
+  run_sad_songs :
+  - text : "here is a playlist of sad songs"
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/UJoZjKx0SgU"} }
   utter_did_that_help:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: "Great, Here is a make to laugh"
+    image: "https://i.imgur.com/tdLzaUo.png"
+    
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
   - text: "I am Mantrin- A chatbot made for student queries."
+
+  utter_how_are_you:
+  - text: "How are you?"
+  - text: "How are you doing?"
+  - text: "How are you feeling?"
+  # utter_ask_student_id:
+  # - text: "Please enter your student id :"
+  # - text: "Please enter your student id number only:"
+  # - text: "Please enter your roll number number :"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

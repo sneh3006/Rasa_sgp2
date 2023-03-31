@@ -6,6 +6,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_how_are_you
   - intent: mood_great
   - action: utter_happy
 
@@ -13,6 +14,7 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_how_are_you
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -23,8 +25,62 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_how_are_you
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
+  - action: utter_happy
   - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: motivation path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: motivation
+  - action: run_motivation
+  - action: utter_goodbye
+
+- story: comedy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: comedy
+  - action: run_comedy
+  - action: utter_goodbye
+
+- story: sad songs path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: sad_songs
+  - action: run_sad_songs
+  - action: utter_goodbye
+
+# - story: know my attendence
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: utter_ask_student_id
+#   - intent: student_id
+#     entities :
+#       - student_id: 1
+#   -slot_was_set:
+#     - student_id: 1
+#   - action: utter_attendence
+
