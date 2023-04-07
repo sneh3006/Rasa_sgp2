@@ -18,6 +18,8 @@ intents:
   - python_syllabus
   - dbms_syllabus
   - data_structure_syllabus
+  - microprocessor_syllabus
+  - list_clubs
 
 # entities:
 #   - student_id
@@ -63,26 +65,32 @@ responses:
     - title : "Python"
       payload : /python_syllabus
     - title : "Database Management System"
-      action : /dbms_syllabus
+      payload : /dbms_syllabus
     - title : "Data Structure"
-      action : /data_structure_syllabus
-    
+      payload : /data_structure_syllabus
+    - title : "Microprocessor and Computing"
+      payload : "/microprocessor_syllabus"
+  
+  
   utter_python_syllabus:
   - text: "Python syllabus :"
-    image: "https://lh3.googleusercontent.com/tOfijrvlM341IG6MOOJtGFoVQsUk5rPkaROIBvlKL0kBMJMBbM0mpHMJO9EzruxtM6vFB8VrDrhtpc28XV74DxT-Dqn-zfyXbAXIseQFjMKmxbYaOKMbTz1DMRtEVqOD6w=w1280"
+    image: "https://lh4.googleusercontent.com/nGwAuoKmWDuhP2w5vTb6s5rZMQ0zQFSc5D2hyD9bf_pztW_yP0vml2v2W2nhIfCSrTBahhcVfAsFKx1hBSLn9sqqQ5QDVAVv5bRiz3gzm0ja6O4WaJqpwiqutGjLQfqyhQ=w1280"
 
   utter_dbms_syllabus:
   - text: "DBMS syllabus :"
-    image: "https://lh5.googleusercontent.com/pJ0UnW7ApU5V3gbY_QdjIpiE4CObtQP62cmJi6OHiutHxsx_m0rZ2Y-rBzb4AhHz39GDIJMiLXZdUB6ynqA-OD2Kd6977moRVm189oJXDZB442LTUPT_ZxkXMUFTSi73KQ=w1280"
+    image: "https://lh3.googleusercontent.com/IOzTDoh7KzCCtqBhb_2wfJk-9zPfjUrScqbWtE2_zzGL3ur3me2-db7m_2_gjjn4TzwhG49nMxhRMo2L1NJUKFFP7evPfEBRMEkettelD4L8Pp9oUQ4Vjj7CyItJVHwzFQ=w1280"
   
   utter_data_structure_syllabus:
   - text: "Data Structure syllabus :"
-    image: "https://lh6.googleusercontent.com/tmQmlC4nQeawk_XgyebOV2zuvNH5CiW7ZQc03xQqSDxemk0aTpHcMXVk6Q0RBiYT9G2tsWWVdy3OcLqGx9M-zTsy_N9-TLGjQq3KGW6aHTqXMvGHNyNgKWlaoUi3p-IxiQ=w1280"
+    image: "https://lh3.googleusercontent.com/soS3ypoE7X38-MOVz5Z-x26nhUAOGwhQMHVgGjKJC4nUrQXvJbfqK0l4Xlec-39bHZMGLvapRzJGCNbTJl6DAgyASCYHl7cbBq1yvtkTfCIPGvJVfDaiOWkwtRRxIRJ2zA=w1280"
 
+  utter_microprocessor_and_computing_syllabus:
+  - text: "Microprocessor and Computing syllabus :"
+    image: "https://lh5.googleusercontent.com/sn_5Q4YNEJJSglUxHZA1k21Ob5tIe3ZHRpsQQb1EEctlU0sF3IVXkAOawk9zAIsHsKxIHY50jPnPe7_QRAnmHM5d5jmOYSyUcd9IMR_Hf_Wea0rv0anq-OEdA0gSD7tkSg=w1280"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
-    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/rf1Zzs4wbCk" } }
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/hxRJTjeDvuY" } }
 
   utter_motivation :
   - text : "here is something to motivate you"
@@ -90,11 +98,11 @@ responses:
 
   utter_comedy :
   - text : "here is something to make you laugh"
-    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/DvUadTYVzAs"} }
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/t0Q2otsqC4I"} }
 
   utter_sad_songs :
   - text : "here is a playlist of sad songs"
-    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/UJoZjKx0SgU"} }
+    attachment: { "type":"video", "payload":{ "src": "https://www.youtube.com/embed/GOH4Fh2WEgM"} }
 
     
   utter_did_that_help:
@@ -119,6 +127,8 @@ responses:
   # - text: "Please enter your student id number only:"
   # - text: "Please enter your roll number number :"
 
+actions:
+- action_display_clubs
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -26,3 +26,8 @@ rules:
   steps:
   - intent: data_structure_syllabus
   - action: utter_data_structure_syllabus
+
+- rule: utter microprocessor syllabus everytime user asks for it
+  steps:
+  - intent: microprocessor_syllabus
+  - action: utter_microprocessor_and_computing_syllabus

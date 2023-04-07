@@ -93,6 +93,19 @@ stories:
   - action: utter_happy
   - action: utter_goodbye
 
+- story: club list path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_are_you
+  - intent: list_clubs
+  - action: action_display_clubs
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+
+
 # - story: know my attendence
 #   steps:
 #   - intent: greet

@@ -151,6 +151,8 @@ nlu:
     - dbms syllabus
     - lecture dbms syllabus
     - I want to know my dbms syllabus
+    - database management system syllabus
+
 
 - intent: data_structure_syllabus
   examples: |
@@ -164,6 +166,36 @@ nlu:
     - data structure syllabus
     - lecture data structure syllabus
     - I want to know my data structure syllabus
+
+- intent: microprocessor_syllabus
+  examples: |
+    - What is my microprocessor syllabus?
+    - how much is my microprocessor syllabus?
+    - microprocessor syllabus please!
+    - help me get my microprocessor syllabus 
+    - tell me my microprocessor syllabus
+    - show me my microprocessor syllabus
+    - give me my microprocessor syllabus
+    - microprocessor syllabus
+    - lecture microprocessor syllabus
+    - I want to know my microprocessor syllabus
+    - what is MCO syllabus
+    - what is MCO syllabus please
+    - what is MCO syllabus now
+    - what is MCO syllabus now please
+    - what is MCO syllabus now please
+
+- intent: list_clubs
+  examples: |
+    - gimme list of clubs
+    - What is the list of clubs?
+    - clubs please!
+    - help me get my clubs 
+    - tell me my clubs
+    - show me my clubs
+    - give me my clubs
+    - clubs
+    - I want to know my clubs
     
 # - intent: know_attendence
 #   examples: |

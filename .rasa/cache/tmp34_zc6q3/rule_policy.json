@@ -1,0 +1,38 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}]": "utter_dbms_syllabus",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_dbms_syllabus\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"python_syllabus\"}}]": "utter_python_syllabus",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"python_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_python_syllabus\"}, \"user\": {\"intent\": \"python_syllabus\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}]": "utter_microprocessor_and_computing_syllabus",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_microprocessor_and_computing_syllabus\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}]": "utter_data_structure_syllabus",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_data_structure_syllabus\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_microprocessor_and_computing_syllabus\"}, \"user\": {\"intent\": \"microprocessor_syllabus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}]",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"python_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_python_syllabus\"}, \"user\": {\"intent\": \"python_syllabus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"python_syllabus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_data_structure_syllabus\"}, \"user\": {\"intent\": \"data_structure_syllabus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}, {\"prev_action\": {\"action_name\": \"utter_dbms_syllabus\"}, \"user\": {\"intent\": \"dbms_syllabus\"}}]"
+    ]
+  }
+}

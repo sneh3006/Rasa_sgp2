@@ -58,3 +58,30 @@ class utter_data_structure_syllabus(Action):
         dispatcher.utter_message(text="Data Structure Syllabus :",image="https://lh6.googleusercontent.com/tmQmlC4nQeawk_XgyebOV2zuvNH5CiW7ZQc03xQqSDxemk0aTpHcMXVk6Q0RBiYT9G2tsWWVdy3OcLqGx9M-zTsy_N9-TLGjQq3KGW6aHTqXMvGHNyNgKWlaoUi3p-IxiQ=w1280")
 
         return []
+    
+
+class Action_Display_clubs(Action):
+    def name(self) -> Text:
+        return "action_display_clubs"
+    
+    def run(self, dispatcher, tracker: Tracker, domain: "DomainDict") -> List[Dict[Text, Any]]:
+        message = {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [
+                    {
+                        "title": "Editing Club",
+                        "subtitle": "A Club only for Pro Editors",
+                        "image_url": "E:\Sem-4\SGP Project-2\public\programming.jpg",
+                    },
+                    {
+                        "title": "Coding Club",
+                        "subtitle": "A Club only for Pro Coders. Only Who Dare to Compite Can Join",
+                        "image_url": "E:\Sem-4\SGP Project-2\public\coding.jpg",
+                    }
+                ]
+                }
+        }
+        dispatcher.utter_message(attachment=message)
+        return []
